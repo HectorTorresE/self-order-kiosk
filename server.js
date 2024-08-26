@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
